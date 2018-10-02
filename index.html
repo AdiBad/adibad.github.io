@@ -4,13 +4,59 @@
 	<title>
 		Aditya Badola
 	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+ 	<link rel="stylesheet" type="text/css" href="style_index.css">
 </head>
-<body style="text-align: center; background-color: #3FC; font-family:Segoe UI " >
+<body style="text-align: center; background-color: #3FC;  font-family:Segoe UI; margin-left: 10px" >
 <div>
-	<mark style="font-size:50px; background-color: yellow">Adibad</mark>
+
+	<p id = "newd" style="text-align: left; " value="Date: " >Date: </p>
+	<script>
+		var today = new Date();
+		
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var month = months[today.getMonth()];
+		var year = today.getFullYear();
+		var date = today.getDate();
+
+
+		document.getElementById("newd").innerHTML = document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+	
+
+	</script>
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark><br>
 	<h1>Welcome to my website</h1>
 	<h2>here you may encounter odd things</h2>
+
 </div>
-<button target="_blank" onlick="window.location.href='poems/poem.html'">Text</button>
+
+<a href='poems/poem.html' target="_blank"><button id="btn_po" class="btn btn-secondary " style="padding-top: 90px; padding-bottom:90px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Creative writing/video-editing">My Art
+</button></a>
+
+<a href='https://github.com/AdiBad' target="_blank"><button id="btn_po" class="btn btn-secondary " style="padding-top: 100px; padding-bottom:100px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title= "Codes on Github">My Craft
+</button></a>
+
+<a href='https://www.linkedin.com/in/aditya-badola/' target="_blank"><button id="btn_po" class="btn btn-secondary " style="padding-top: 95px; padding-bottom:95px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Resume on LinkedIn">Myself<span class="tooltiptext"></span>
+</button><br><br>
+
+<div class="container">
+<!-- <iframe src="https://drive.google.com/file/d/1iNLAMcjXUq3Hrwb1x-_KVXA_6KZ01-WS/preview" width="640" height="480"></iframe> -->
+</div>
+
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
 </body>
 </html>
