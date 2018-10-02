@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Poems
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="text-align: center; background-color: olive;  font-family:Segoe UI; margin: 10px;">
+<?
+	<br>
+
+	<p id = "newd" style="text-align: left;" >Date: </p>
+	<script>
+		var today = new Date();
+		
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var month = months[today.getMonth()];
+		var year = today.getFullYear();
+		var date = today.getDate();
+
+		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+		document.getElementById("newd").innerHTML = today;
+				
+
+	</script>
+	<br>
+	
+	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">--.RB.--</mark><br><br><br>
+	<span style="color:white">Richa Badola | Author | House Wife | Teacher</span>
+</div><br>
+
+
+<p class="label label-default">A Slick Life!</p><br>
+<iframe src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" width="640" height="480"></iframe>
+</body>
+</html>

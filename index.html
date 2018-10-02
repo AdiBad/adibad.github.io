@@ -12,7 +12,7 @@
 <body style="text-align: center; background-color: #3FC;  font-family:Segoe UI; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" >
 <div>
 
-	<p id = "newd" style="text-align: left; " value="Date: " >Date: </p>
+	<p id = "newd" style="text-align: left;" >Date: </p>
 	<script>
 		var today = new Date();
 		
@@ -21,29 +21,104 @@
 		var year = today.getFullYear();
 		var date = today.getDate();
 
+		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+		document.getElementById("newd").innerHTML = today;
+				
 
-		document.getElementById("newd").innerHTML = document.getElementById("newd").innerHTML +date+" "+month+" "+year;
-	
-
-	</script><br>
-<div class="container font-small indigo" style="background-color: black; height: 130px; ">
-	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark><br><br><br>
-	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
-</div>
+	</script>
 	<br>
-	<h1>Welcome to my website</h1>
-	<h2>here you may encounter odd things</h2>
+<div class="container font-small indigo" style="background-color: black; height: 130px; width:100%; ">
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark>
+	<br><br><br>
+	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
+
 
 </div>
 
-<a href='poems/poem.html' target="_top"><button id="btn_po" class="btn btn-secondary " style="padding-top: 90px; padding-bottom:90px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Creative writing/video-editing">My Art
+<br>
+
+<div class="jumbotron" style="border:dotted 5px yellow; background-color: transparent;  min-height: 350px">
+	<div class="col-md-6 mx-auto pull-left" style=" align-self: center;">
+		<a data-toggle="modal" data-target="#myspeech" style=" text-align: right; margin-left: 110px" >
+			<img style="position:relative; border-radius:50%; width:40%; height:80%" alt="Me"  src="images/me.jpg" >
+		</a>
+</div>
+
+<div class="col-md-5 mx-auto" style="align-self: center; ; margin:5px">
+	<h1>Welcome to my website</h1>
+	<h2 style=" background-color:white; color:grey">here you may encounter <marquee direction="down" style="
+     text-align: center; color:black">odd</marquee> things</h2>
+
+</div>
+</div>
+	
+</div>
+
+
+<br>
+<div class="container"><!-- 
+	<button type="button" class="btn btn-info btn-lg" id="btn_po" data-toggle="modal" data-target='#myspeech'>Make me say Hi!</button> -->
+	<div class="container ">
+		
+		
+
+	
+		
+	</div>
+	
+	<div class="modal fade" id="myspeech" role="dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Hi!</h4>
+			</div>
+			<div class="modal-body">
+				Thanks for passing by.
+				I am a biotechnology enthusiast solving real world problems using software tools, us humans' greatest asset. My portfolio is at your dismissal, enjoy :)
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+<br>
+<span class="label label-info">Personal</span>
+<a href='poems/poem.html' target="_top">
+	<button id="btn_po" class="btn btn-secondary " type="submit" style="padding-top: 90px; padding-bottom:90px; margin-left:20px; margin-right: 20px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Creative writing">My Art
+</button>
+</a>
+
+
+	<a href='https://github.com/AdiBad' target="_blank"><span class="label label-info">Technical</span>
+	<button id="btn_po" class="btn btn-secondary " style="padding-top: 100px; padding-bottom:100px;margin-right: 20px; margin-left:20px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title= "Codes on Github">My Craft
 </button></a>
 
-<a href='https://github.com/AdiBad' target="_blank"><button id="btn_po" class="btn btn-secondary " style="padding-top: 100px; padding-bottom:100px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title= "Codes on Github">My Craft
+
+	<a href='https://www.linkedin.com/in/aditya-badola/' target="_blank">
+<span class="label label-info">Official</span>
+	<button id="btn_po" class="btn btn-secondary " style="padding-top: 95px; margin-right: 20px; padding-bottom:95px; margin-left:20px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Resume on LinkedIn">Myself
 </button></a>
 
-<a href='https://www.linkedin.com/in/aditya-badola/' target="_blank"><button id="btn_po" class="btn btn-secondary " style="padding-top: 95px; padding-bottom:95px; background-color: yellow; color:black" data-toggle="tooltip" data-placement="top" title="Resume on LinkedIn">Myself
-</button></a><br><br>
+<div class="container" style="align-content: center">
+
+<a href="http://www.google.com" target="_blank" style="align-content: center; ">
+<div class="trapezium btn btn-secondary"><br><br>
+	<p>Awards & Certificates</p>
+</div>
+</a>
+
+
+</div>
+<br>
+
+
+
+
+
+
+
 
 
 
@@ -64,6 +139,9 @@
           <ul class="list-unstyled">
             <li>
               <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage"><img src="images/mail.svg" height="50px" width="50px" style="filter: invert(100%); padding-right: 20px">Email</a><br>
+              </li>
+              <a href="https://www.linkedin.com/in/aditya-badola/"><img src="images/linkedin.svg" height="40px" width="40px" style="filter: invert(100%);"> LinkedIn</a>
+            </li>
               <hr></li>
               <a href="https://plus.google.com/110849262829609175387"><img src="images/plus-circle.svg" height="50px" width="50px" style="filter: invert(100%);"> Google+</a>
             </li>
@@ -71,7 +149,7 @@
               
             
               <li>
-            	<a href="https://www.facebook.com/aditya.badola"><img src="images/facebook.svg" height="50px" width="50px" style="filter: invert(100%);"> Facebook
+            	<a href="https://www.facebook.com/aditya.badola"><img src="images/facebook.svg" height="40px" width="40px" style="filter: invert(100%);"> Facebook
               	</a><br>
               </li>
 
@@ -99,16 +177,22 @@
 				<iframe src="https://drive.google.com/file/d/1iNLAMcjXUq3Hrwb1x-_KVXA_6KZ01-WS/preview" ></iframe>
 			</div>
             </li>
-            <li>
-              <a href="#!">*</a>
-            </li>
-            <li>
-              <a href="#!">*</a>
-            </li>
-            <li>
-              <a href="#!">*</a>
-            </li>
           </ul>
+        <hr>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Additional</h5>
+        <ul>
+            <li>
+              <p class="label label-default">My mum wrote a book!</p><br>
+              <a href='/asl/richa.html' style="color:yellow" target="_blank">Check it out</a>
+            </li>
+         </ul><!-- 
+            <li>
+              <a href="#!">*</a>
+            </li>
+            <li>
+              <a href="#!">*</a>
+            </li>
+          </ul> -->
 
         </div>
 
