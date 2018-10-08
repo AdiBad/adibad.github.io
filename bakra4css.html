@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		Richa Badola
+		Bakra4css
 	</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -21,12 +21,12 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  adding: 8rem 0;
+  padding: 8rem 0;
 }
 
 /* The circle */
 .sonar-emitter {
-  /*position: absolute;*/
+  position: absolute;
   margin: 0 auto;
   width: 175px;
   height:175px;
@@ -38,7 +38,6 @@
 .sonar-wave {
   position: relative;
   top: 0;
-  bottom:20;
   left: 0;
   width: 100%;
   height: 100%;
@@ -47,8 +46,6 @@
   opacity: 0;
   z-index: -1;
   pointer-events: none;
-  padding-bottom: 200px;opacity: 0.5;
-    filter: alpha(opacity=50);
 }
 
 /*
@@ -212,11 +209,12 @@
   padding: 15px;
 }
 
+}
 
 	</style>
 </head>
 <body style="text-align: center; background-color: #EE82EE;  font-family:Segoe UI; margin: 10px;">
-	<p id = "newd" style="text-align: left; background-color: lavenderblush" >Date: </p>
+	<p id = "newd" style="margin-left:80px; margin-right: 80px; text-align: left; background-color: lavenderblush" >Date: </p>
 	<script>
 		var today = new Date();
 		
@@ -230,16 +228,26 @@
 				
 
 	</script>
-	<br><br>
-	<div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px; ">
+	<br>
+	
+	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
 	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: lavenderblush">--.RB.--</mark><br><br><br>
 	<span style="color:white">Richa Badola | Author | House Wife | Teacher</span>
+</div>
+
+<div class="sonar-wrapper col-md-7 mx-auto " >
+	<div class="sonar-emitter">
+		<img style="position:relative; border-radius:50%; width:90%; height:90%; top: 8px " src="asl/disp.JPG" alt="Me" >
+    <div class="sonar-wave">
+    	
+    </div>
+  </div>
 </div>
 
 <div id="wrapper" >
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="col-md-3 mx-auto" style="margin-top: 0px; ">
+        <div id="sidebar-wrapper" class="col-md-3 mx-auto" style="margin-top: 20px">
             <nav id="spy">
                 <ul class="sidebar-nav nav">
                     <li class="sidebar-brand">
@@ -270,42 +278,30 @@
         </div>
 <br>
         <!-- Page content -->
-        <div id="page-content-wrapper" class="col-md-9 mx-auto pull-right">
-         
-         <!-- IMAAAAAAAAAAGGGGGGGGGGGGGGGEEEEEEEEEEE -->
-         <!-- <img style="position:relative; border-radius:50%; width:90%; height:90%;  " src="disp.JPG" alt="Me" > -->
-<br>
-<div class="sonar-wrapper">
-  <div class="sonar-emitter">
-    <img src="disp.JPG"  style="border-radius: 50%;width:100%; height:100%; padding: 19px 19px 11px; ">
-    <div class="sonar-wave" ></div>
-    <!-- <img src="disp.JPG"  style="border-radius: 50%;width:90%; height:90%; padding: 19px 19px 11px; "> -->
-   
-  </div>
-</div>
-            
-
-            <div class="page-content inset" data-spy="scroll" data-target="#spy">
-              <div class="content-header">
+        <div id="page-content-wrapper" class="col-md-7 mx-auto pull-right">
+            <div class="content-header">
                 <h1 id="home">
-                    <p style="align-self: left">
+                    <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+                        <i class="fa fa-bars" ></i>
+                    </a><p style="align-self: left">
                     Welcome to my webpage!</p>
                 </h1>
-              </div>
+            </div>
+
+            <div class="page-content inset" data-spy="scroll" data-target="#spy">
                 <div class="row">
   
-                        <div id="abt" class="jumbotron text-center" style="margin:15px; padding:20px; text-align: justify;" >
-                            <h1 class=" text-center">Hi!</h1>
+                        <div id="abt" class="jumbotron text-center" style="margin:5px" >
+                            <h1>Hi!</h1>
                             <p>
 							This is Richa here, a school teacher, a gardener, a mother (and that takes care of all other professions in my repertoire)!
-							I have two children. I am a post graduate in English and my hobbies include reading, cooking and yes gardening that surprisingly relaxes me with the manual effort that it demands of me.<br> 
-              I am fond of everything God has created and find imperfections perfectly perfect! :)
+							I have two children. I am a post graduate in English and my hobbies include reading, cooking and yes gardening that surprisingly relaxes me with the manual effort that it demands of me. I am fond of everything God has created and find imperfections perfectly perfect! :)
 							I have now graduated myself from my other roles to become many other things by becoming a full fledged writer.<br>
 							I've debuted with a short poetry book called 'The Vagrant', that will greatly appeal the younger lot as well as school teachers although it has seen appreciation from other quarters as well.
 							My second book 'A Slick Life' is an interesting memoir of an interesting oilman whose life saw the many changes happening in India and its people. It makes for a good read as well as make you a part of its own as you'll proceed.
 							</p>
                            
-                            <a style="text-align: center" class="btn btn-info" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.smashwords.com%2Fbooks%2Fview%2F520947&related=markcoker%3AMark%20Coker%2C%20Founder%20of%20Smashwords%2Cricha04richa%3ARicha%20Bhatt%20Badola&text=Looking%20at%20A%20Slick%20Life%20by%20Richa%20Bhatt%20Badola%20%40richa04richa%20at%20%23smashwords" >Tweet Me!</a></p>
+                            <a class="btn btn-info" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.smashwords.com%2Fbooks%2Fview%2F520947&related=markcoker%3AMark%20Coker%2C%20Founder%20of%20Smashwords%2Cricha04richa%3ARicha%20Bhatt%20Badola&text=Looking%20at%20A%20Slick%20Life%20by%20Richa%20Bhatt%20Badola%20%40richa04richa%20at%20%23smashwords">Tweet Me!</a></p>
                         </div>
     
                 </div>
@@ -313,120 +309,35 @@
                     
                 </div>
 
-                
-            
-
-      
-
-<!-- <br><br>
-<br><br>
-<br><br>
-<br><br> -->
-<div class="jumbotron col-md-12 mx-auto" style="background-color: white" id="bv page-content-wrapper">
-<p class="label label-default">A Slick Life!</p><br>
-<iframe  class="mx-auto d-block" src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" height=45% width=45%></iframe>
-</div>
-
-
-
-  <div id="bk" class="jumbotron col-md-12 mx-auto " style="background-color: black; text-align: center">
-  	<p class="label label-default" style="background-color: lavenderblush; color: black; font-weight: bold">Book: The Vagrant</p><br><br>
-  <img height=25% width=25% margin=10px class=" mx-auto d-block" src="tv.JPG" >
-   <p style="text-align: center; size: 5px; color:white"><br>It is a book that will take you meandering through beauty of nature and life experiences within it, leaving you feeling enriched of those moments</p>
-  </div>
-
- 
-  <br>
-
-    </div>  
-                <div class=" navbar navbar-default " style="max-height: 40px;position: fixed;
-    bottom: 0; width:88%; margin-left: 16px;margin-right: 40px; margin-bottom: 0">
+                <div class="navbar navbar-default navbar-static-bottom">
                     <p class="navbar-text center">
-                        Built by <a href="http://www.adibad.cf" target="_blank">AdiBad</a>
+                        Built by <a href="adibad.cf" target="_blank">AdiBad</a>
                     </p>
                 </div>
+            </div>
+
+        </div>
+
+<div class="jumbotron" style="background-color: white">
+	<div id="bv page-content-wrapper" class="col-md-6 mx-auto pull-right">
+<p class="label label-default">A Slick Life!</p><br>
+<iframe src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" width="350" height="300"></iframe>
+</div>
+</div>
+
+<div class="container" id="bk">
+  <div class="jumbotron shadow-lg p-4 mb-4 bg-white" style="background-color: black; ">
+  	<p class="label label-default" style="background-color: lavenderblush; color: black; font-weight: bold">Book: The Vagrant</p><br><br>
+  <img height=45% width=45% margin=10px class=" mx-auto d-block" src="tv.JPG" >
+   <p style="text-align: center; size: 5px; color:white"><br>It is a book that will take you meandering through nature’s beauty and life’s experiences within it, leaving you feeling enriched of those moments</p>
+  </div>
+  <br>
+
     </div>
+
 
 </body>
 </html>
 
 
 <!-- http://www.mangcut.vn/blog/2014-11-26-sonar-effect-with-css.html -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>
-		Poems
-	</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
-<body style="text-align: center; background-color: olive;  font-family:Segoe UI; margin: 10px;">
-	<br>
-
-	<p id = "newd" style="text-align: left;" >Date: </p>
-	<script>
-		var today = new Date();
-		
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var month = months[today.getMonth()];
-		var year = today.getFullYear();
-		var date = today.getDate();
-
-		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
-		document.getElementById("newd").innerHTML = today;
-				
-
-	</script>
-	<br>
-	
-	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
-	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">--.RB.--</mark><br><br><br>
-	<span style="color:white">Richa Badola | Author | House Wife | Teacher</span>
-</div><br>
-<br><br>
-<div class="sonar-wrapper">
-	<div class="sonar-emitter"><p>Hi</p>
-    <div class="sonar-wave">
-    	
-    </div>
-  </div>
-</div>
-
-<p class="label label-default">A Slick Life!</p><br>
-<!-- <iframe src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" width="640" height="480"></iframe> -->

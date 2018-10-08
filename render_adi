@@ -1,0 +1,16 @@
+var express =require('express');
+var app=express();
+
+app.get('/',function(req,res){
+	res.sendFile(__dirname + '/' +'index.html');
+});
+
+app.get('/asl/richa.html',function(req,res){
+	res.sendFile(__dirname + '/asl/' +'richa.html');
+});
+
+var server = app.listen(9000, function ()    {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log("Listening now...")
+})
