@@ -4,6 +4,7 @@
 	<title>
 		Richa Badola
 	</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -212,12 +213,72 @@
   padding: 15px;
 }
 
-#fb_me:hover{
+.test.blue {
+  background-color: powderblue;
 
 }
+
+.test { 
+  border: dotted 5px white;
+  margin: 5px;
+  padding: 20px 20px;
+  content: "Latest: A Slick Life has celebrated its third anniversary!";
+}
+.lefbox{
+  content: "Left"
+}
+.ribox{
+  content: "Right"
+}
+
+.move {
+    width: 100px;
+    height: 100px;
+    background-color: powderblue;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
+     animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:powderblue; left:0px; top:0px; }
+    25%  {background-color:#3B5998; left:70%; top:0px;}
+    100% {background-color:powderblue; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:powderblue; left:0px; top:0px;}    
+    25%  {background-color:#3B5998; left:70%; top:0px;}
+    100% {background-color:powderblue; left:0px; top:0px;}
+    
+}
+
 	</style>
+
+<!--   <script type="text/javascript">
+    jQuery(document).ready(function($){
+      var alterClass = function(){
+        var wid = document.body.clientWidth;
+        if(wid<985){
+          $('.test').removeClass('blue');
+          }
+        else if(wid >= 985){
+          $('.test').addClass('blue');
+        }
+      }
+
+      $(window).resize(function(){
+        alterClass();
+      })
+    });
+  </script> -->
 </head>
-<body background="big1_plant.jpeg" style="text-align: center; background-color: white; background-size: cover; background-repeat: no-repeat; font-family:Segoe UI; margin: 10px;">
+<body background="big1_plant.jpeg" style="text-align: center; background-color: white; background-size: cover; background-repeat: no-repeat; font-family:Segoe UI; margin: 5px;">
 	<p id = "newd"  class="label label-default" style="align-self: : left; background-color: white; color: black; " >Date: </p><hr>
 	<script>
 		var today = new Date();
@@ -233,10 +294,19 @@
 
 	</script>
 	<br>
-	<div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px; ">
-	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: lavenderblush; margin-left: 20%">--.RB.--</mark><br><br><br>
-	<span style="color:white">Richa Badola | Author | House Wife | Teacher</span>
-</div>
+  <div class="test">
+  <div class="container col-md-3 mx-auto font-small indigo " style="background-color: black; height: 130px; opacity:50%; text-align:justify; word-wrap: break-word; white-space: normal; text-overflow: clip; padding-top: 6%">
+    <marquee width=75% style="color: white;padding-left: 13%;align-self: center">Latest: A Slick Life has celebrated its third anniversary!</marquee>
+   <!--  RICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHABADOLARICHA -->
+  </div></div>
+
+	<div class="container col-md-9 mx-auto font-small indigo" style="background-color: black; height: 130px; ">
+    
+	
+    <mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: lavenderblush; /*margin-right: 9%;*/ ">--.RB.--</mark><br><br><br>
+	  <span style="color:white; /*margin-right: 11%*/;">Richa Badola | Author | House Wife | Teacher</span>
+
+  </div>
 
 <div id="wrapper" >
 
@@ -290,7 +360,7 @@
             <div class="page-content inset" data-spy="scroll" data-target="#spy">
               <div class="content-header">
                 <h1 id="home">
-                    <p style="align-self: left; background-color: white; color:black" class="label label-default">
+                    <p style="align-self: center; background-color: white; color:black" class="label label-default">
                     Welcome to my webpage!</p>
                 </h1>
               </div>
@@ -307,8 +377,9 @@
               							My second book 'A Slick Life' is a treasured memoir of an interesting oilman whose life saw the many changes happening in India and its people. It makes for a good read as it pulls you in as a part of its own, a feeling better felt by reading than simply told.
               							</p>
                            
-                            <a  class="btn btn-info" style="text-align: center"  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.smashwords.com%2Fbooks%2Fview%2F520947&related=markcoker%3AMark%20Coker%2C%20Founder%20of%20Smashwords%2Cricha04richa%3ARicha%20Bhatt%20Badola&text=Looking%20at%20A%20Slick%20Life%20by%20Richa%20Bhatt%20Badola%20%40richa04richa%20at%20%23smashwords" >Tweet Me!</a></p>
-                        </div>
+                            <a  class="btn btn-info" style="text-align: center"  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.smashwords.com%2Fbooks%2Fview%2F520947&related=markcoker%3AMark%20Coker%2C%20Founder%20of%20Smashwords%2Cricha04richa%3ARicha%20Bhatt%20Badola&text=Looking%20at%20A%20Slick%20Life%20by%20Richa%20Bhatt%20Badola%20%40richa04richa%20at%20%23smashwords" >Tweet Me!</a>
+
+                            <a href="#contact" class="btn btn-info" style="text-align: center; align-self: right">Contact Me!</a>              </div>
     
                 </div>
                 <div class="row">
@@ -318,8 +389,8 @@
    
                 <div class="jumbotron col-md-12 mx-auto" style="background-color: black" id="bv">
                    <p class="label label-default" style="background-color: lavenderblush; color: black; font-weight: bold">Book: A Slick Life</p><br><br>
-                  <iframe  class="mx-auto d-block" src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" height=45% width=45%>
-                  </iframe>
+                  <!-- <iframe  class="mx-auto d-block" src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview" height=45% width=45%>
+                  </iframe> -->
                 </div>
 
 
@@ -386,18 +457,32 @@
                     </a>
                     </div>
                   </div>
-                </div>
 
+                </div>
+                <br>
+                <div class="jumbotron text-center" style="background-color: powderblue; padding:5px; text-align: justify; " >
+                <p class="lefbox" style="float: left; padding-top:6%; margin-left: 3%">Peek-a-buy!</p>
+                <div class="move"></div>
+              </div>
+
+              <div class="jumbotron col-md-12 mx-auto"><a href="https://www.kobo.com/us/en/ebook/a-slick-life" style="font-size: 150%">Read Now!</a></div>
  
   <br>
 
     </div>  
-                <div class=" navbar navbar-default " style="max-height: 40px;position: fixed;
-    bottom: 0; width:88%; margin-left: 16px;margin-right: 40px; margin-bottom: 0">
-                    <p class="navbar-text center">
+                <div class=" navbar navbar-default navbar-text center " style="max-height: 40px;position: fixed;
+    bottom: 0; width:90%; margin-left: 14px;margin-right: 40px; margin-bottom: 0">
                         Built by <a href="http://www.adibad.cf" target="_blank">AdiBad</a>
-                    </p>
-                </div>
+                      </div>
+
+
+
+<br>
+
+<hr>
+  <br>
+  <br>
+  <br>
     </div>
 
 </body>

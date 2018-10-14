@@ -1,0 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  button:before {
+    content: 'small screen';
+  }
+  @media screen and (min-width: 480px) {
+    button:before {
+      content: 'big screen';
+    }
+  }
+</style>
+<body>
+  <button type="button">xxx</button>
+  <button type="button"></button>
+</body>
