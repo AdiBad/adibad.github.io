@@ -2,143 +2,94 @@
 <html>
 <head>
 	<title>
-		Awards
+		Aditya Badola
 	</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+ 	<link rel="stylesheet" type="text/css" href="style_index.css">
 </head>
-<style type="text/css">
- .flip-box {
-  background-color: transparent;
-  width: 450px;
-  height: 320px;
- /*border: 1px solid #000;*/
-  /*perspective: 1000px;  Remove this if you don't want the 3D effect */
-}
+<!-- original color: #3FC -->
+<body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" >
+<div>
 
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
+	<p id = "newd" style="text-align: left; color:white" >Date: </p>
+	<script>
+		var today = new Date();
+		
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var month = months[today.getMonth()];
+		var year = today.getFullYear();
+		var date = today.getDate();
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
- .flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
+		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+		document.getElementById("newd").innerHTML = today;
+				
 
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #000;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: black;
-  color: white;
-  transform: rotateY(180deg);
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-<body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin: 10px;">
-<p id = "newd" style="text-align: left; color:white" >Date: </p><br>
-  <script>
-    var today = new Date();
-    
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var month = months[today.getMonth()];
-    var year = today.getFullYear();
-    var date = today.getDate();
-
-    today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
-    document.getElementById("newd").innerHTML = today;
-        
-
-  </script>
-
-
-	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
-	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow" ><a href="../index.html" style="color:black">Adibad</a></mark><br><br><br>
+	</script>
+	
+<div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px; width:100%; ">
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow"><a href="../index.html" style="color:black">Adibad</a></mark>
+	<br><br><br>
 	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
-</div><br>
+</div>
+<p style="font-weight: bold; color:white; font-size: 110%">Video Vault </p>
+</div>
 
-<p id="text" style="color:lightgrey; font-size: 64%"></p>
+<div class="jumbotron col-md-12 mx-auto" style="background-color: black;  width:100%;" id="contact">
 
-  <script type="text/javascript">
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var element = document.getElementById('text');
-    if (isMobile) {
-        element.innerHTML = "Open in Desktop Mode for better experience.";
-    } else {
-      element.innerHTML = "";
-    }
-  </script>
+<p style="font-size: 84%; color:white"> If proper video does not load, open via HTML source </p>
 
-<div class="container font-small indigo">
-  <div class="jumbotron  d-block mx-auto bg-white" style="background-color: black; overflow: hidden; ">
-  	
-    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">For Designing a Lamp!</p><br><br>
+   <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
+                   <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">My Birthday celebration: Compilation</p><br><br>
+				  	<div>
+				  <iframe style="max-height: 250px; max-width: 450px" src="https://drive.google.com/file/d/1iNLAMcjXUq3Hrwb1x-_KVXA_6KZ01-WS/preview" ></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">ft Psychopaths</p><br><br>
 
-
-     <div class="flip-box center">
-       <div class="flip-box-inner ">
-         <div class="flip-box-front ">
-          <img height=320px width=450px margin=10px class=" mx-auto d-block" style="-webkit-transform: scaleY(-1); transform: scaleY(-1);" class=""  src="OUR_2016.jpg" >
-         </div>
-    <div class="flip-box-back">
-      <h3>Opportunity for Undergraduate Research-2016</h3>
-      <p>Mentor: Prof. Amit Ray</p>
-      <p>Department: Arts & Design</p>
-      <p>Grade: Excellent</p>
+                    </div>
     </div>
-  </div>
-</div>
-
-   <p style="text-align: center; size: 5px; color:white"><br>Click <a href="https://drive.google.com/file/d/0B5xdZIlB8bQyNlFYalozY0Y2SWM/view">me</a> to see video!</p>
-    <br> 
-</div>
-</div>
-
-<div class="container font-small indigo">
-  <div class="jumbotron shadow-lg d-block mx-auto bg-white" style="background-color: black;  overflow: hidden;">
-    
-    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">For bioinformatics project!</p><br><br>
-
-
-     <div class="flip-box center">
-       <div class="flip-box-inner ">
-         <div class="flip-box-front ">
-          <img height=320px width=450px margin=10px class=" mx-auto d-block" style="-webkit-transform: scaleY(-1); transform: scaleY(-1); class=""  src="OUR_2017.jpg" >
-         </div>
-     <div class="flip-box-back">
-      <h3>Opportunity for Undergraduate Research-2017</h3>
-      <p>Mentor: Dr. Swati Garg</p>
-      <p>Department: Life Sciences</p>
-      <p>Grade: Excellent</p>
+                     <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Trip to Kasol</p><br><br>
+				  	<div >
+					<iframe src="https://drive.google.com/file/d/1nw9lKIjNzie_48dBqlw1_Dof3n6NSAu5/preview" ></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">ft NOCD</p><br><br>
+                    </div>
     </div>
+               <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Sunday Funday</p><br><br>
+				  	<div >
+					<iframe src="https://drive.google.com/file/d/1cywWeyGf4p0fWlSRQvGQbn3p598jpwm3/preview"></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">ft NOCD</p><br><br>
+                    </div>
+    </div>
+    <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Shubham Falls</p><br><br>
+				  	<div >
+					<iframe src="https://drive.google.com/file/d/1LUeSjfSo2SQIO_Tr5uARa6ianb-J0a7J/preview" ></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">ft NOCD</p><br><br>
+                    </div>
+                    </div>
+    <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">A Slick Life</p><br><br>
+				  	<div >
+					<iframe src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRU5TPkMR4-2P8b7/preview"></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">My mum wrote a book!</p><br><br>
+                    </div>
+                    </div>
+                     <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Random Clips & Pictures</p><br><br>
+				  	<div >
+					<iframe src="https://drive.google.com/file/d/1J8gMKIZ2X6DgtRUKqkQRhm9dqx9IeR9R/preview" ></iframe><br>
+				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">A glimpse of life in SNU</p><br><br>
+                    </div>
+                    </div>
+    </div> 
   </div>
-</div>
 
-   <p style="text-align: center; size: 5px; color:white"><br>Click <a href="https://drive.google.com/file/d/0B5xdZIlB8bQyTUVaYl9qb284NEJnWVVsVzdmbXFPeDlJVlpN/view?usp=sharing">me</a> to see research paper!</p>
-    <br> 
-</div>
-</div>
-<!-- FOOOOOOOOOOOOOOOTTTTTTTTTTTTTTTTEEEEEEEEEEERRRRRRRRRRR -->
+
+
+
+
 
 <div class="jumbotron col-md-12 mx-auto" style="background-color: black;  width:100%;" id="contact">
                   <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="fb_me" >
@@ -180,7 +131,6 @@
                     </a>
                     </div>
                   </div>
-                 
 
                   <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
                     <h4>Facebook</h4> 
@@ -192,7 +142,7 @@
                         <img src="../images/facebook.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
 
 
-                      </button> 
+                      </button>
                     </a>
                     </div>
                   </div>
@@ -221,6 +171,5 @@
 
   </footer>
   <!-- Footer -->
-
 </body>
 </html>

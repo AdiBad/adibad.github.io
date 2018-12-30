@@ -7,17 +7,40 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin: 10px;">
-<?
+<p id = "newd" style="text-align: left; color:white" >Date: </p>
+  <script>
+    var today = new Date();
+    
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var month = months[today.getMonth()];
+    var year = today.getFullYear();
+    var date = today.getDate();
+
+    today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+    document.getElementById("newd").innerHTML = today;
+        
+
+  </script>
+  <br>
 	<br>
 	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
-	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark><br><br><br>
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow"><a href="../index.html" style="color:black">Adibad</a></mark><br><br><br>
 	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
-</div><br>
+</div>
+<p style="font-weight: bold; color:white; font-size: 110%">Creative Work Vault </p>
 
 <div class="container">
+  <div class="jumbotron shadow-lg p-2 mb-4 bg-white" style="background-color: black; ">
+    <p class="label label-default p-4 mb-4" style="background-color: yellow; color: black; font-weight: bold; align-items: left"  data-toggle="tooltip" data-placement="top" title="Movie Projects">Video Vault <a href="video.html"> Go</a></p>
+
+   <p class="label label-default p-4 mb-4" style="background-color: yellow; color: black; font-weight: bold; align-items: right"  data-toggle="tooltip" data-placement="top" title="Take me to Blogger!">Articles Vault <a href="iadibad.blogspot.com"> Go</a></p>
+
+    <p class="label label-default p-4 mb-4" style="background-color: yellow; color: black; font-weight: bold; align-items: right"  data-toggle="tooltip" data-placement="top" title="Take me to poems!">Poems Vault <a href="#itso"> Go</a></p>
+  </div>
+
   <div class="jumbotron shadow-lg p-4 mb-4 bg-white" style="background-color: black; ">
-  	<p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Poem: It so happens</p><br><br>
-  <img height=45% width=45% margin=10px class=" mx-auto d-block" src="happen.jpg" >
+  	<p id="itso" class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Poem: It so happens</p><br><br>
+  <img  height=45% width=45% margin=10px class=" mx-auto d-block" src="happen.jpg" >
    <p style="text-align: center; size: 5px; color:white"><br>When not codes, I write poems!</p>
   </div>
   <br>
@@ -47,32 +70,32 @@
                     </a>
                     </div>
                   </div>
-                  <div class="jumbotron col-md-4 mx-auto" style="background-color: black; align-self: center; color:white" id="tw_me">
-                    <h4>E-mail</h4> 
-                    (Send me official stuff directly!)<br>
+                 <div class="jumbotron col-md-4 mx-auto" style="background-color: black; align-self: center; color:white" id="tw_me">
+                   <h4>Instagram</h4> 
+                    (Know me better!)<br>
                     <div id="hover-content">
-                      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Open your e-mail app">
+                      <a href="https://www.instagram.com/i.adibad">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Instagram Homepage">
                     
-                        <img src="../images/mail.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+                        <img src="../images/instagram.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
                       </button>
                     </a>
                     </div>
                   </div>
                   <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="tw_me">
-                    <h4>Instagram</h4> 
-                    (Know me better!)<br>
-                    <div id="hover-content">
-                      <a href="https://www.instagram.com/i.adibad">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Twitter">
+                     <h4>E-mail</h4> 
+                    (Send me official stuff directly!)<br>
                     
-                        <img src="../images/instagram.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
+                    <div id="hover-content">
+                      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Open your e-mail app">
+                    
+                        <img src="../images/mail.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
 
                       </button>
                     </a>
                     </div>
                   </div>
-                 
 
                   <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
                     <h4>Facebook</h4> 
@@ -92,10 +115,10 @@
                     <h4>Google+</h4> 
                     (Always glad to chat up!)<br>
                     <div id="hover-content">
-                      <a href="https://plus.google.com/110849262829609175387">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Twitter">
+                      <a href="plus.google.com/+AdityaBadola">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Google+">
                     
-                        <img src="../images/twitter.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+                        <img src="../images/plus-circle.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
 
 
                       </button>
