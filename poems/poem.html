@@ -7,7 +7,21 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin: 10px;">
-<?
+<p id = "newd" style="text-align: left; color:white" >Date: </p>
+  <script>
+    var today = new Date();
+    
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var month = months[today.getMonth()];
+    var year = today.getFullYear();
+    var date = today.getDate();
+
+    today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+    document.getElementById("newd").innerHTML = today;
+        
+
+  </script>
+  <br>
 	<br>
 	<div class="container font-small indigo" style="background-color: black; height: 130px; ">
 	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark><br><br><br>
@@ -15,6 +29,14 @@
 </div><br>
 
 <div class="container">
+  <div class="jumbotron shadow-lg p-2 mb-4 bg-white" style="background-color: black; ">
+    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold"  data-toggle="tooltip" data-placement="top" title="movie Projects">Video Vault <a href="video.html"> Go</a></p><br>
+  </div>
+
+  <div class="jumbotron shadow-lg p-2 mb-4 bg-white" style="background-color: black; ">
+    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold"  data-toggle="tooltip" data-placement="top" title="Take me to Blogger!">Articles Vault <a href="iadibad.blogspot.com"> Go</a></p><br>
+  </div>
+
   <div class="jumbotron shadow-lg p-4 mb-4 bg-white" style="background-color: black; ">
   	<p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">Poem: It so happens</p><br><br>
   <img height=45% width=45% margin=10px class=" mx-auto d-block" src="happen.jpg" >
@@ -92,7 +114,7 @@
                     <h4>Google+</h4> 
                     (Always glad to chat up!)<br>
                     <div id="hover-content">
-                      <a href="https://plus.google.com/110849262829609175387">
+                      <a href="plus.google.com/+AdityaBadola">
                       <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Twitter">
                     
                         <img src="../images/twitter.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
