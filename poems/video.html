@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Aditya Badola
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+ 	<link rel="stylesheet" type="text/css" href="style_index.css">
+</head>
+<!-- original color: #3FC -->
+<body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" >
+<div>
+
+	<p id = "newd" style="text-align: left; color:white" >Date: </p>
+	<script>
+		var today = new Date();
+		
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var month = months[today.getMonth()];
+		var year = today.getFullYear();
+		var date = today.getDate();
+
+		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+		document.getElementById("newd").innerHTML = today;
+				
+
+	</script>
+	<br>
+<div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px; width:100%; ">
+	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark>
+	<br><br><br>
+	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
+</div>
+<p> </p>
+</div>
+
+
+<div class="jumbotron col-md-12 mx-auto" style="background-color: black;  width:100%;" id="contact">
+                  <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="fb_me" >
+                   
+                    <h4>LinkedIn</h4> 
+                    (Business? Job? Internship? Contact me here)<br>
+                    <div id="hover-content">
+                      <a href="https://www.linkedin.com/in/aditya-badola/">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to LinkedIn">
+                    
+                        <img src="../images/linkedin.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">                    
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="jumbotron col-md-4 mx-auto" style="background-color: black; align-self: center; color:white" id="tw_me">
+                    <h4>E-mail</h4> 
+                    (Send me official stuff directly!)<br>
+                    <div id="hover-content">
+                      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Open your e-mail app">
+                    
+                        <img src="../images/mail.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="tw_me">
+                    <h4>Instagram</h4> 
+                    (Know me better!)<br>
+                    <div id="hover-content">
+                      <a href="https://www.instagram.com/i.adibad">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Twitter">
+                    
+                        <img src="../images/instagram.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                 
+
+                  <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
+                    <h4>Facebook</h4> 
+                    (Come be a part of my friend circles!)<br>
+                    <div id="hover-content">
+                      <a href="https://www.facebook.com/pages/category/Author/Richa-Bhatt-Badola-219971981530900/">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px; " data-toggle="tooltip" data-placement="top" title="Take me to FB">
+                    
+                        <img src="../images/facebook.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                     <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <h4>Google+</h4> 
+                    (Always glad to chat up!)<br>
+                    <div id="hover-content">
+                      <a href="plus.google.com/+AdityaBadola">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Twitter">
+                    
+                        <img src="../images/twitter.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                
+              </div>
+            
+<footer class="page-footer font-small indigo" style="background-color: black">
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage" style="color:yellow;"> Aditya Badola</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
