@@ -14,10 +14,10 @@
 .trapezium {
 	margin-left: 0px;
   border-bottom: 100px solid yellow;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
     height: 0;
-    width: 300px;
+    width: 280px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -28,3 +28,24 @@
   margin-right: auto;
   width: 50%;
 }
+
+.wrap {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-text {
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 500px;
+    
+  }
+  h3 {
+      color: white;
+      margin-top: 0;
+      text-align: center;
+    }
+  ul{
+    text-align:  left
+  }
