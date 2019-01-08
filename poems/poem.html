@@ -6,6 +6,8 @@
 	</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="asl_css.css">
+
+  <link rel="stylesheet" type="text/css" href="../style_index.css">
 </head>
 <body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin: 10px;">
 <p id = "newd" style="text-align: left; color:white" >Date: </p>
@@ -20,6 +22,27 @@
     today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
     document.getElementById("newd").innerHTML = today;
 
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
   </script>
   <br>

@@ -61,6 +61,7 @@ p a{
 }
 </style>
 
+  <link rel="stylesheet" type="text/css" href="../style_index.css">
 <body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin: 10px;">
   <div class="col-md-12 mx-auto">
 <p id = "newd" style="text-align: left; color:white" >Date: </p><br>
@@ -75,7 +76,27 @@ p a{
     today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
     document.getElementById("newd").innerHTML = today;
 
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
   </script>
 <br>
 
