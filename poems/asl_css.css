@@ -32,22 +32,22 @@
             position: relative;
         }
         
-        #slider-image-1:target ~ .image-holder
+        #rev1:target ~ .image-holder
         {
             left: 0px;
         }
         
-        #slider-image-2:target ~ .image-holder
+        #rev2:target ~ .image-holder
         {
             left: -292px;
         }
         
-        #slider-image-3:target ~ .image-holder
+        #rev3:target ~ .image-holder
         {
             left: -594px;
         }
 
-        #slider-image-4:target ~ .image-holder
+        #rev4:target ~ .image-holder
         {
             left: -895px;
         }
