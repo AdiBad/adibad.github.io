@@ -2,54 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Experience
+  </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
+body {
+  /*margin: 0;*/
+  height:100%;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("img_parallax.jpg");
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url("img_parallax2.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("img_parallax3.jpg");
-  min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
 }
 
 h3 {
@@ -61,54 +25,224 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
 }
 </style>
+  <link rel="stylesheet" type="text/css" href="style_index.css">
 </head>
-<body>
+<body style="margin:1%">
+  
+<div class="bgimg-3 half-black" style=" min-height: 200px; background-image: url("none"); "><p id = "newd" style="text-align: left; color:black; margin-bottom: 0px; padding-bottom: 0px;" >Date: </p>
+  <div class="caption">
+  <a href="https://adibad.github.io/" style="text-decoration: none"><span class="border label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow;opacity: 1;">Adibad</span></a>
+  </div>
+</div>
+
+<!--  <div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px;  ">
+
+  <mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow">Adibad</mark>
+  <br><br><br>
+  <span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
+</div> -->
+
+
+  <div class=" col-md-12 mx-auto " style="margin:0">
+<script type="text/javascript">
+  var today = new Date();
+
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var month = months[today.getMonth()];
+    var year = today.getFullYear();
+    var date = today.getDate();
+
+    today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
+    document.getElementById("newd").innerHTML = today;
+
+
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<button class="navbar " onclick="openNav()" style="opacity: 0.5; border-radius:95%;padding-top: 28px;  padding-bottom:28px; margin-left:90%; background-color: yellow; color:black; margin-top: 2%" data-toggle="tooltip" data-placement="top" title="Menu">&#9776
+</button> 
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://adibad.github.io/">Home</a>
+  <a href="https://github.com/AdiBad">Projects</a>
+  <a href="https://adibad.github.io/experience.html">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="">INTERNSHIPS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;color: white">CSIR-Institute of Genomics & Integrative Biology</h3>
+  <p>Summer of 2018</p>
+  <p>Mentor: Dr. Vinod Scaria</p>
+  <p>Big Data Analytics of Human Genomes</p>
+  <p>Skills developed: Python, Linux shell scripting, bioinformatics</p>
+  <p>Tools used: PennCNV for Copy Number Variation analysis, GEO datasets</p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+  <!-- <span class="border">INTERNSHIPS</span> -->
+  </div>
+</div>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;color: white">Jawaharlal Nehru University</h3>
+  <p>Winter of 2017</p>
+  <p>Mentor: Dr. Andrew Lynn</p>
+  <p>Next-Generation Sequencing technologies</p>
+  <p>Skills developed: Python, Data science, bioinformatics</p>
+  
+  </div>
+</div>
+
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border"  style="background-color: black; color: white">UNIVERSITY</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center; color: white">SHIV NADAR UNIVERSITY</h3>
+  <p>Batch of 2019</p>
+  <p>Btech Computer Science & Engineering, 8.22 CGPA (out of total 10)</p>
+  <p>Scholarship of 80% on academic fees (via SNUSAT admission test)</p>
+  <p>Member, e-Newsletter Society, Campus Caravan</p>
+  </div>
+</div>
 
 <div class="bgimg-1">
   <div class="caption">
-  <span class="border">SCROLL DOWN</span>
+  <span class="border">SCHOOL</span>
   </div>
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+  <h3 style="text-align:center;color:black">DPS RKPURAM</h3>
+  <p>Batch of 2015</p>
+  <p>Class 12, CBSE, 94.4%</p>
+  <p>Subject stream: Computer Science</p>
+  <p>Awarded Blue Blazer for academic performance</p>
+  <p>Secretary, Literary Society</p>
 </div>
 
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-  </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
+<div class="jumbotron col-md-12 mx-auto center" style=" background-color: black;  width:100%;" id="contact"> <p ><span class="border " style="background-color: black" style="float:center;  text-align: center;">Contact me</span></p><br>
+                  <div class="jumbotron col-md-6 mx-auto" style="background-color: yellow; color:black; align-self: center; align-content: center" id="fb_me" >
 
-<div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  </div>
-</div>
+                    <h4>LinkedIn</h4>
+                    (Business? Job? Internship? Contact me here)<br>
+                    <div id="hover-content">
+                      <a href="https://www.linkedin.com/in/aditya-badola/">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to LinkedIn">
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
+                        <img src="images/linkedin.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                 <div class="jumbotron col-md-6 mx-auto" style="float: right; background-color: black; align-self: center; color:white" id="tw_me">
+                   <h4>Instagram</h4>
+                    (Know me better!)<br>
+                    <div id="hover-content">
+                      <a href="https://www.instagram.com/i.adibad">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Instagram Homepage">
 
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">COOL!</span>
-  </div>
-</div>
+                        <img src="images/instagram.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="jumbotron col-md-6 mx-auto" style="background-color: yellow;color:black;  align-self: center;" id="tw_me">
+                     <h4>E-mail</h4>
+                    (Send me official stuff directly!)<br>
 
+                    <div id="hover-content">
+                      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Open your e-mail app">
+
+                        <img src="images/mail.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+
+                  <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
+                    <h4>Facebook</h4>
+                    (Come be a part of my friend circles!)<br>
+                    <div id="hover-content">
+                      <a href="https://www.facebook.com/aditya.badola">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px; " data-toggle="tooltip" data-placement="top" title="Take me to FB">
+
+                        <img src="images/facebook.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                     <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
+                    <h4>Google+</h4>
+                    (Always glad to chat up!)<br>
+                    <div id="hover-content">
+                      <a href="https://plus.google.com/+AdityaBadola">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Google+">
+
+                        <img src="images/plus-circle.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
+                    <h4>Medium</h4>
+                    (Read my tech-related opinions!)<br>
+                    <div id="hover-content">
+                      <a href="https://medium.com/@ab555">
+                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px; " data-toggle="tooltip" data-placement="top" title="Take me to Medium">
+
+                        <img src="images/medium.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
+
+
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+
+              </div>
+
+<footer class="page-footer font-small indigo" style="background-color: black">
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage" style="color:yellow;"> Aditya Badola</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
 </body>
 </html>
