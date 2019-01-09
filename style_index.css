@@ -91,15 +91,24 @@ width: 90px;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #111;
+  background-color: yellow; 
 }
+
+
+.closebtn {
+  margin-top:2%;
+  border-radius: 50%;
+  padding:0%;
+}
+
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
 }
 
 @media screen and (max-height: 450px) {

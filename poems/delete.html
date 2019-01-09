@@ -8,230 +8,79 @@
 
 
  	<link rel="stylesheet" type="text/css" href="style_index.css">
+
+  <style type="text/css">
+    #header {
+    margin-left: 0px;
+    width: auto;
+    height: 90px;
+    padding: 0px;
+    padding-left:185px;
+    font-size: 35px; color:#FFFFFF; 
+    background-color: #f6c491;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#menu {
+    position: relative;
+    clear: both;
+    width: auto;
+    height: 38px;
+    padding: 0;
+    padding-left:185px;
+    background-color:#FFFFFF;   
+    margin-bottom: 10px;
+    margin-left:0px;
+}
+
+#menu ul {
+    float: left;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header{position:fixed;top:0;height:50px;}
+ #menu{padding-top:50px;}
+
+#menu ul li {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+
+#menu a {
+    float: left;
+    display: block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    border: none;   
+    border-top: 3px solid black;
+}
+  </style>
 </head>
-<!-- original color: #3FC -->
-<style type="text/css">
-        .slider-holder
-        {
-            width: 308px;
-            height: 430px;
-            background-color: black;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        .image-holder
-        {
-            width: 1240px;
-            background-color: black;
-            height: 430px;
-            clear: both;
-            position: relative;
-            
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
-        
-        .slider-image
-        {
-            float: left;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-        
-        #slider-image-1:target ~ .image-holder
-        {
-            left: 0px;
-        }
-        
-        #slider-image-2:target ~ .image-holder
-        {
-            left: -292px;
-        }
-        
-        #slider-image-3:target ~ .image-holder
-        {
-            left: -594px;
-        }
+<body>
+  <div id="header" > <img src="images/iesheader_nnew1.jpg" alt="image" /></div>
 
-        #slider-image-4:target ~ .image-holder
-        {
-            left: -890px;
-        }
-
-        .button-holder
-        {
-            position: relative;
-            top: -20px;
-        }
-        
-        .slider-change
-        {
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            border-radius: 5px;
-            background-color: black;
-        }
-</style>
-
-<body style="text-align: center; background-color: #383838;  font-family:Segoe UI; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" >
-
-
-	<p id = "newd" style="text-align: left; color:white" >Date: </p>
-	<script>
-		var today = new Date();
-
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var month = months[today.getMonth()];
-		var year = today.getFullYear();
-		var date = today.getDate();
-
-		today =  document.getElementById("newd").innerHTML +date+" "+month+" "+year;
-		document.getElementById("newd").innerHTML = today;
-
-
-	</script>
-	<br>
-
-  <div style="background-color: black;" >
-    <div class="container col-md-12 mx-auto font-small indigo" style="background-color: black; height: 130px; width:100%; ">
-    	<mark class="label label-default" style="margin-top: 50px; color:black; font-size:50px; background-color: yellow"><a href="../index.html" style="color:black">Adibad</a></mark>
-    	<br><br><br>
-    	<span style="color:white">Aditya Badola | Bioinformatician | Data Analyst | Web Developer</span>
-    </div>
-    <p style="font-weight: bold; color:white; font-size: 110%">Video Vault </p>
-    
-
-    <div class="jumbotron col-md-12 mx-auto" style="background-color: black;  width:100%;" id="contact">
-
-    <p style="font-size: 84%; color:white"> If video does not load properly, open via HTML source </p>
-<div style="background-color: #330">
-     
-        <div class="jumbotron col-md-6 mx-auto" style="background-color: #330; align-self: center;color:white" id="gm_me">
-                    <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold">A Slick Life</p><br><br>
-				  	<div >
-					<iframe src="https://drive.google.com/file/d/1cv036HjzGuQnPmR2IRUw5TPkMR4-2P8b7/preview"></iframe><br>
-				  <p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; font-size: 84%">My mum wrote a book!</p><br><br>
-          <p class="label label-default" style="background-color: peachpuff;padding-top: 0px "> <a  style="background-color: peachpuff; color: black; font-weight: bold; font-size: 84%" href="https://pothi.com/pothi/book/ebook-richa-bhatt-badola-slick-life">Click to read preview & buy! </a></p><br><br><p style="font-size: 84%">(Pothi website)</p>
-          <p class="label label-default" style="background-color: peachpuff; padding-top: 0px"> <a  style="background-color: peachpuff; color: black; font-weight: bold; font-size: 84%" href="https://www.smashwords.com/books/view/520947">PDF/EPUB/Print available here </a></p><br><br><p style="font-size: 84%">(Smashwords website)</p><hr style="margin-top:0px; margin-bottom: 5px">
-           <p class="label label-default" style="background-color: #330;padding-top: 0px; "> <a  style="background-color: #330; color: lemonchiffon; font-weight: bold; font-size: 84%;" href="http://authoricha.blogspot.com/">Interested in more stories? Click me! </a></p><br><br><p style="font-size: 84%">(Personal blog)</p>
-         
-                    </div>
-                    </div>
-
-<div class="jumbotron col-md-6 mx-auto" style="background-color: #330; align-self: center;color:white" id="gm_me">
-
-<p class="label label-default" style="background-color: yellow; color: black; font-weight: bold; ">A few reviews</p>
-          <br><br>                     <div class="slider-holder">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <span id="slider-image-4"></span>
-        <div class="image-holder">
-            <img src="../images/asl_ar1.jpg" class="slider-image" />
-            <img src="../images/asl_ih1.jpg" class="slider-image" />
-            <img src="../images/asl_sr1.jpg" class="slider-image" />
-            <img src="../images/asl_st1.jpg" class="slider-image" />
-        </div>
-        <div class="button-holder">
-            <a href="#slider-image-1" class="slider-change"></a>
-            <a href="#slider-image-2" class="slider-change"></a>
-            <a href="#slider-image-3" class="slider-change"></a>
-            <a href="#slider-image-4" class="slider-change"></a>
-        </div>
-    </div>
-       </div>           
-    </div>
-
-
-</div>
-</div>
-<div class="jumbotron col-md-12 mx-auto" style="background-color: black;  width:100%;" id="contact"><p ><span class="label label-info" style="background-color: black" style="float:left;  text-align: left">Contact me</span></p><br>
-                  <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="fb_me" >
-
-                    <h4>LinkedIn</h4>
-                    (Business? Job? Internship? Contact me here)<br>
-                    <div id="hover-content">
-                      <a href="https://www.linkedin.com/in/aditya-badola/">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to LinkedIn">
-
-                        <img src="../images/linkedin.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
-                      </button>
-                    </a>
-                    </div>
-                  </div>
-                  <div class="jumbotron col-md-4 mx-auto" style="background-color: black; align-self: center; color:white" id="tw_me">
-                   <h4>Instagram</h4>
-                    (Know me better!)<br>
-                    <div id="hover-content">
-                      <a href="https://www.instagram.com/i.adibad">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Instagram Homepage">
-
-                        <img src="../images/instagram.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
-                      </button>
-                    </a>
-                    </div>
-                  </div>
-                  <div class="jumbotron col-md-4 mx-auto" style="background-color: yellow; align-self: center;" id="tw_me">
-                     <h4>E-mail</h4>
-                    (Send me official stuff directly!)<br>
-
-                    <div id="hover-content">
-                      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: #000; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Open your e-mail app">
-
-                        <img src="../images/mail.svg" height="40px" width="40px" style="filter: invert(100%);" style="border-radius: 50%">
-
-                      </button>
-                    </a>
-                    </div>
-                  </div>
-
-                  <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center; color:white" id="li_me">
-                    <h4>Facebook</h4>
-                    (Come be a part of my friend circles!)<br>
-                    <div id="hover-content">
-                      <a href="https://www.facebook.com/aditya.badola">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px; " data-toggle="tooltip" data-placement="top" title="Take me to FB">
-
-                        <img src="../images/facebook.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
-
-
-                      </button>
-                    </a>
-                    </div>
-                  </div>
-                     <div class="jumbotron col-md-6 mx-auto" style="background-color: black; align-self: center;color:white" id="gm_me">
-                    <h4>Google+</h4>
-                    (Always glad to chat up!)<br>
-                    <div id="hover-content">
-                      <a href="https://plus.google.com/+AdityaBadola">
-                      <button id="btn_po" class="btn btn-secondary " style=" background-color: yellow; padding: 40px;" data-toggle="tooltip" data-placement="top" title="Take me to Google+">
-
-                        <img src="../images/plus-circle.svg" height="40px" width="40px" style="filter: invert(100%);-webkit-filter: grayscale(100%); filter: grayscale(100%);" style="border-radius: 50%; background-color: black">
-
-
-                      </button>
-                    </a>
-                    </div>
-                  </div>
-
-              </div>
-
-<footer class="page-footer font-small indigo" style="background-color: black">
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="mailto:ab555@snu.edu.in?Subject=Query%20from%20personal%20Webpage" style="color:yellow;"> Aditya Badola</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
+    <div id="menu">
+      <ul>
+           <li><a href="index.html"><abbr title="Home">Home&nbsp;&nbsp;</abbr></a></li>
+           <li><a href="aboutus.html"> <abbr title="About Us">About Us&nbsp;&nbsp;</abbr> </a></li>
+           <li><a href="acad.html"><abbr title="Academics">Academics</abbr></a></li>
+           <li><a href="admin.html"><abbr title="Administration">Administration</abbr></a></li>
+           <li><a href="news.html"><abbr title="News">News</abbr></a></li>
+           <li><a href="contact.html"><abbr title="Contact Us">Contact Us</abbr> </a></li>
+           <li><a href="photo.html"><abbr title="Photo Gallery">Photo Gallery</abbr> </a></li>
+      </ul>     
+        <div class="cleaner"></div>
+  </div> 
 </body>
 </html>
