@@ -1,5 +1,5 @@
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-0, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -9,6 +9,10 @@
 
 }
 
+.bgimg-0 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/KU_Leuven_logo.svg/330px-KU_Leuven_logo.svg.png");
+    min-height: 300px;
+}
 
 .bgimg-1 {
   background-image: url("http://www.dpsajmer.in/img/team/logo.png");
